@@ -1,1 +1,1 @@
-json.message 'my products'
+json.array! @product
