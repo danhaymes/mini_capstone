@@ -13,10 +13,10 @@ class Api::ProductsController < ApplicationController
   def create
     # make a new product in the database
     @product = Product.new(
-        name: params[:input_name],
-        price: params[:input_price],
-        image_url: params[:input_image_url],
-        description: params[:input_description]
+        name: params[:name],
+        price: params[:price],
+        image_url: params[:image_url],
+        description: params[:description]
       )
     @product.save
     render 'show.json.jbuilder'
